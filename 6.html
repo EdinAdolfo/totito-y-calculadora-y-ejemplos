@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saludo Amigable</title>
+</head>
+<body>
+    <h1>Saludo Amigable</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombreInput">
+    <button onclick="mostrarSaludo()">Saludar</button>
+    <script>
+        function mostrarSaludo() {
+            var nombre = document.getElementById("nombreInput").value;
+            if (nombre) {
+                alert(`¡Hola ${nombre}! Bienvenido.`);
+            } else {
+                alert("Por favor, ingresa tu nombre.");
+            }
+        }
+    </script>
+</body>
+</html>
